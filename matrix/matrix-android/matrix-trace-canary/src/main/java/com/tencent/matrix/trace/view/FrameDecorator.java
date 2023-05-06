@@ -321,7 +321,7 @@ public class FrameDecorator implements ISceneFrameListener {
 
     @Override
     public int getIntervalMs() {
-        return 200;
+        return 600;
     }
 
     @Override
