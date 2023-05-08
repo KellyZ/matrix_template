@@ -119,8 +119,8 @@ public class MatrixApplication extends Application {
         builder.plugin(memoryCanaryPlugin);
 
         // Configure trace canary.
-//        TracePlugin tracePlugin = configureTracePlugin(dynamicConfig);
-//        builder.plugin(tracePlugin);
+        TracePlugin tracePlugin = configureTracePlugin(dynamicConfig);
+        builder.plugin(tracePlugin);
 
         // Configure resource canary.
         ResourcePlugin resourcePlugin = configureResourcePlugin(dynamicConfig);
