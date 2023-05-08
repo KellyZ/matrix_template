@@ -87,7 +87,7 @@ public class TracePlugin extends Plugin {
             @Override
             public void run() {
 
-                if (sdkInt < Build.VERSION_CODES.N && willUiThreadMonitorRunning(traceConfig)) {
+                if (willUiThreadMonitorRunning(traceConfig)) { //sdkInt < Build.VERSION_CODES.N && 
                     if (!UIThreadMonitor.getMonitor().isInit()) {
                         try {
                             UIThreadMonitor.getMonitor().init(traceConfig);
