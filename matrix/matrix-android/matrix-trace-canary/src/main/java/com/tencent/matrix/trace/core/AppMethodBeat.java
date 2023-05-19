@@ -203,6 +203,7 @@ public class AppMethodBeat implements BeatLifecycle {
     }
 
     private static void dispatchBegin() {
+        i(METHOD_ID_DISPATCH)
         sCurrentDiffTime = SystemClock.uptimeMillis() - sDiffTime;
         isPauseUpdateTime = false;
 
@@ -212,6 +213,7 @@ public class AppMethodBeat implements BeatLifecycle {
     }
 
     private static void dispatchEnd() {
+        o(METHOD_ID_DISPATCH)
         isPauseUpdateTime = true;
     }
 
